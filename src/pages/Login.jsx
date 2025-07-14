@@ -15,7 +15,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (credentials.username === 'admin' && credentials.password === '12345') {
+    if (credentials.username === 'admin' && credentials.password === '123') {
       dispatch(login());
       navigate('/', { replace: true });
     } else {

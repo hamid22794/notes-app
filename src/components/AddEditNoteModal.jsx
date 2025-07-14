@@ -48,7 +48,7 @@ const AddEditNoteModal = ({ show, onClose, noteToEdit, onSave }) => {
       <Modal.Body>
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
-            <Form.Label>Note Content</Form.Label>
+            <Form.Label>Note Contents</Form.Label>
             <Form.Control
               ref={textareaRef}
               as="textarea"

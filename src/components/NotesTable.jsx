@@ -8,7 +8,7 @@ const NotesTable = ({ handleEdit, showToast }) => {
   const { darkMode } = useSelector((state) => state.theme);
 
   const filteredNotes = notes.filter((note) =>
-    note.title.includes(searchTerm)
+    note.title.includes.lowerCase(searchTerm.lowerCase())
   );
 
   const handleDelete = (noteId) => {
